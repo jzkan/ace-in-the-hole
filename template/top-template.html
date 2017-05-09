@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Ace in the Hole MultiSport Weekend</title>
@@ -22,21 +23,42 @@
         });
     </script>
 </head>
-	<body>
-<header>
-    <a href="#"><img id="logo" src="css/img/logo.png" width="251" height="44" alt="logo"></a>
-    <span id="toggle"><i></i></span>
-    <nav id="navigation">
-        <ul>
-            <li><a href='ace/course.html'>About Course</a></li>
-            <li><a href='ace/register.html'>Register Now</a></li>
-            <li><a href='ace/afterregister.html'>After You Register</a></li>
-            <li><a href='ace/faq.html'>FAQs</a></li>
-        </ul>
-    </nav>
-    <div id="navbottom"></div>
-</header>
-	<main>
+
+<body>
+    <header>
+        <a href="#"><img id="logo" src="css/img/logo.png" width="251" height="44" alt="logo"></a>
+        <span id="toggle"><i></i></span>
+        <nav id="navigation">
+            <ul>
+                <li><a href='ace/course.html'>About Course</a></li>
+                <li><a href='ace/register.html'>Register Now</a></li>
+                <li><a href='ace/afterregister.html'>After You Register</a></li>
+                <li><a href='ace/faq.html'>FAQs</a></li>
+            </ul>
+        </nav>
+        <div id="navbottom"></div>
+    </header>
+    <section id="slideshow">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="css/img/1.jpg" alt="image1"></div>
+                <div class="swiper-slide"><img src="css/img/2.jpg" alt="image2"></div>
+                <div class="swiper-slide"><img src="css/img/3.jpg" alt="image3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    autoplay: 3000
+                });
+            </script>
+        </div>
+    </section>
+    <main>
         <section>
             <h2>h2 h2 h2</h2>
             <p>Lorem ipsum dolor sit amet, <a>consectetur adipiscing</a> elit. Nullam at rhoncus dolor. Cras id urna dictum, aliquet magna nec, auctor ligula. Curabitur tempor magna pharetra elit imperdiet, in dapibus ligula ultricies. Vestibulum elementum ante quis mattis egestas. Suspendisse eget consectetur nisi. Aliquam id nisi diam. Aenean fringilla sollicitudin lectus, condimentum ultricies neque sodales eu. Suspendisse ac felis molestie, tincidunt dolor et, scelerisque turpis.</p>
@@ -47,8 +69,9 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <table>
-                        <tr><th colspan="2">table head</th>
-						</tr>
+                        <tr>
+                            <th colspan="2">table head</th>
+                        </tr>
                         <tr>
                             <td>Lorem ipsum</td>
                             <td>Lorem ipsum</td>
@@ -68,13 +91,14 @@
                     </table>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                              <p>Lorem ipsum dolor sit amet, <a>consectetur adipiscing</a> elit. Nullam at rhoncus dolor. Cras id urna dictum, aliquet magna nec, auctor ligula. Curabitur tempor magna pharetra elit imperdiet, in dapibus ligula ultricies. Vestibulum elementum ante quis mattis egestas. Suspendisse eget consectetur nisi.</p>
+                    <p>Lorem ipsum dolor sit amet, <a>consectetur adipiscing</a> elit. Nullam at rhoncus dolor. Cras id urna dictum, aliquet magna nec, auctor ligula. Curabitur tempor magna pharetra elit imperdiet, in dapibus ligula ultricies. Vestibulum elementum ante quis mattis egestas. Suspendisse eget consectetur nisi.</p>
                 </div>
             </div>
         </section>
-		</main>
-	    <footer>
+    </main>
+    <footer>
         <p>©︎ Ace in the Hole Multisport Weekend</p>
     </footer>
-		</body>
+</body>
+
 </html>
