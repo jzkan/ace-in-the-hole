@@ -19,14 +19,15 @@ html {
 
 main {
     padding: 0 1em;
+	section {
+		padding-top: 1.5em;
+	}
 }
-
 body {
-	
-			padding-top: 4em;
     font-family: @bfont;
-    font-size: 16px;
-    line-height: 2em;
+	margin-top: 64px;
+    font-size: 14px;
+    line-height: 1.8em;
     color: @black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     a {
@@ -173,14 +174,26 @@ header {
     margin-top: 12px;
 }
 
+/* slideshow */
+
+#slideshow {
+	height: 300px;
+	width: 100%;
+	background-color: @lightgray;
+	p {
+		padding-top: 150px;
+		text-align: center;
+	}
+}
+
 
 /* footer */
 footer {
     background: linear-gradient(-135deg, @red, @darkgray);
     width: 100%;
     height: 4em;
-    margin-top: 2em;
     padding: 1em;
+	margin-top: 3em;
     p {
         color: white;
         text-align: center;
@@ -191,11 +204,14 @@ footer {
     }
 }
 
+
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
     body {
-        padding-top: 7em;
+        margin-top: 103px;
+		font-size: 15px;
+    line-height: 2em;
     }
 		main{
 	max-width: 750px;
@@ -234,9 +250,13 @@ footer {
 /* Medium devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-		    body {
-        padding-top: 5em;
+	    body {
+        margin-top: 77px;
+					font-size: 16px;
     }
+		h2 {
+		font-size: 2.3em;
+	}
 			main{
 	max-width: 970px;
 	}
