@@ -1,0 +1,1 @@
+<?php echo '<footer><p>©︎ Ace in the Hole Multisport Weekend</p></footer>' ?>
