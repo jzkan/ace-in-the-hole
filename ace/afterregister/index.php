@@ -1,0 +1,1 @@
+<?php include( 'afterregister.html.php' ); ?>
